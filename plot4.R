@@ -14,7 +14,7 @@ plot(x$datetime,x$Sub_metering_1, type="n", xlab="", ylab="Energy sub metering")
 with(x, lines(datetime, Sub_metering_1, col="black"))                               #add line 1 in black
 with(x, lines(datetime, Sub_metering_2, col="red"))                                 #add line 2 in red
 with(x, lines(datetime, Sub_metering_3, col="blue"))                                #add line 3 in blue
-legend("topright",col=c("black","red","blue"),bty="n", lty=1, lwd=2,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",col=c("black","red","blue"),bty="0", lty=1, lwd=2,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 #3
 with(x, plot(datetime, Voltage, type="l"))
 #4
